@@ -14,11 +14,11 @@ function App() {
   const countTotalFeedback = option => {
     switch (option) { 
       case 'good':
-        return setGood(good + 1);      
+        return setGood(g => (g+1));      
       case 'neutral':
-        return setNeutral(neutral + 1);      
+        return setNeutral(n=> (n+1));      
       case 'bad':
-        return setBad(bad + 1);
+        return setBad(b => (b+1));
       default:
         return;
     }
